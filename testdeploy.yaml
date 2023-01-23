@@ -1,5 +1,8 @@
 stages:
 - stage: Deploy-D
+  displayName: Dev Deployment
+
 
 - stage: Deploy-T
-
+  displayName: Test Deployment
+  dependsOn: Deploy-D

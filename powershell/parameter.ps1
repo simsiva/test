@@ -1,0 +1,2 @@
+echo $resourceGroupName
+echo $kvName

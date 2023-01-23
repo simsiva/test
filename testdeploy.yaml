@@ -1,6 +1,19 @@
 stages:
 - stage: Deploy-D
-
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Write-Host "Hello World"
 
 
 - stage: Deploy-T
+- task: PowerShell@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Write-Host "Hello World -2 "

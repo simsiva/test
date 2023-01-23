@@ -1,24 +1,5 @@
 stages:
 - stage: Deploy-D
-- task: ARMtemplate1
-  inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'Free Trial(498b1052-b57c-4ea4-8998-cd9e7ebcee0c)'
-    subscriptionId: '498b1052-b57c-4ea4-8998-cd9e7ebcee0c'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'rg-test-d'
-    location: 'East US'
-    templateLocation: 'Linked artifact'
-    deploymentMode: 'Incremental'
 
 - stage: Deploy-T
-- task: ARMtemplate2
-  inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'Free Trial(498b1052-b57c-4ea4-8998-cd9e7ebcee0c)'
-    subscriptionId: '498b1052-b57c-4ea4-8998-cd9e7ebcee0c'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'rg-test-t'
-    location: 'East US'
-    templateLocation: 'Linked artifact'
-    deploymentMode: 'Incremental'
+

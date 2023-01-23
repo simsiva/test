@@ -1,6 +1,6 @@
 stages:
 - stage: Deploy-D
-- task: AzureResourceManagerTemplateDeployment@3
+- task: AzureResourceManagerTemplateDeployment@1
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'Free Trial(498b1052-b57c-4ea4-8998-cd9e7ebcee0c)'
@@ -12,7 +12,7 @@ stages:
     deploymentMode: 'Incremental'
 
 - stage: Deploy-T
-- task: AzureResourceManagerTemplateDeployment@3
+- task: AzureResourceManagerTemplateDeployment@2
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'Free Trial(498b1052-b57c-4ea4-8998-cd9e7ebcee0c)'

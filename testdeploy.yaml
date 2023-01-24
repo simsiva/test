@@ -1,7 +1,10 @@
 stages:
 - stage: Deploy-D
   displayName: Dev Deployment
-
+  jobs:
+  - job:
+    steps:
+    - pwsh : Write-Host "Test" 
 
 - stage: Deploy-T
   displayName: Test Deployment

@@ -12,11 +12,3 @@ steps:
     inputs:
     folderPath: '$(System.DefaultWorkingDirectory)/**/*.zip'
     fileType: 'json'
-
-- stage: DeployT
-  displayName: Test Deployment
-  dependsOn: DeployD
-  jobs:
-  - job:
-    steps:
-    - pwsh : Write-Host "Test_Run" 

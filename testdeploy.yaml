@@ -8,6 +8,7 @@ stages:
 - stage: DeployD
   displayName: Dev Deployment
 steps:
+- step:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'

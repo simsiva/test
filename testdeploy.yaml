@@ -10,8 +10,8 @@ stages:
   jobs:
   - job:
     steps:
-- task: FileTransform@1
-  inputs:
+  - task: FileTransform@1
+    inputs:
     folderPath: '$(System.DefaultWorkingDirectory)/**/*.zip'
     fileType: 'json'
     

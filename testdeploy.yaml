@@ -4,13 +4,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- task: AzureKeyVault@2
-  inputs:
-    KeyVaultName: 
-    SecretsFilter: '*'
-    RunAsPreJob: false
-    
 stages:
 - stage: DeployD
   displayName: Dev Deployment

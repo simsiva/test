@@ -10,6 +10,11 @@ stages:
   jobs:
   - job:
     steps:
+- task: FileTransform@1
+  inputs:
+    folderPath: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    fileType: 'json'
+    
     - pwsh : Write-Host "Test" 
 
 - stage: DeployT

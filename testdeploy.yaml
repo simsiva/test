@@ -9,3 +9,7 @@ stages:
 - stage: Deploy-T
   displayName: Test Deployment
   dependsOn: Deploy-D
+  jobs:
+  - job:
+    steps:
+    - pwsh : Write-Host "Test_Run" 

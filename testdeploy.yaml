@@ -1,14 +1,14 @@
 stages:
-- stage: Deploy D
+- stage: DeployD
   displayName: Dev Deployment
   jobs:
   - job:
     steps:
     - pwsh : Write-Host "Test" 
 
-- stage: Deploy T
+- stage: DeployT
   displayName: Test Deployment
-  dependsOn: Deploy D
+  dependsOn: DeployD
   jobs:
   - job:
     steps:

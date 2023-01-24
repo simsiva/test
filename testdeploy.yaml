@@ -7,9 +7,7 @@ pool:
 stages:
 - stage: DeployD
   displayName: Dev Deployment
-  jobs:
-  - job:
-    steps:
+steps:
   - task: FileTransform@1
     inputs:
     folderPath: '$(System.DefaultWorkingDirectory)/**/*.zip'
